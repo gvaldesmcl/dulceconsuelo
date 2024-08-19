@@ -41,33 +41,6 @@ header img {
     font-size: 20px !important;
 }
 
-/*
-header nav {
-    display: inline-block;
-    
-}
-
-
-header nav ul {
-    list-style: none;
-    color: #B27088;
-    display: flex;
-}
-
-header nav ul li {
-    
-    margin-right: 20px;
-
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #B27088;
-    font-size: 20px;
-
-}
-*/
-
 /*! ------------ MAIN ------------------*/
 
 /*?----- Hero ----*/
@@ -93,6 +66,7 @@ header nav ul li a {
     font-weight: 700;
     font-size: 90px;    
     color: #373535;
+    text-shadow: 4px 4px 2px #B27088;
 }
 
 .hero a {
@@ -206,25 +180,45 @@ header nav ul li a {
     margin-bottom: 30px;
 }
 
+/*? ------ Preferidos END --------*/
+
 
 .nosotros-hero {
     width: 100%;
-    height: calc(100vh - 155px);
-    text-align: center;
-    background-image: url(../img/nosotros.jpg);
+    height: calc(100vh - 100px);    
+    background-image: url(../img/nosotros.png);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .nosotros-hero h1 {
-    font-size: 50px;
-    display: inline;
-    color: #B27088;
+    font-family: "Dancing Script", sans-serif;    
+    font-weight: 700;
+    font-size: 90px;    
+    color: #373535;
+    text-shadow: 4px 4px 2px #C2D6D7;
+    /*color: #B27088;*/
 }
 
 .nosotros-div {
     text-align: center;
-    background-color: #d8a16c;
+    background-color: #D0AE99;
     padding: 20px;
+}
+
+.nosotros-div ul li{    
+    list-style-type: '👉';
+    padding-inline-start: 1ch;
+    text-align: left;
 }
 
 .nosotros-div div {
@@ -242,21 +236,30 @@ header nav ul li a {
     width: 200px;
 }
 
-
-
+/* --------- Productos --------*/
 
 .productos-hero {
     width: 100%;
-    height: calc(100vh - 155px);
-    text-align: center;
+    height: calc(100vh - 100px);    
     background-image: url(../img/productos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .productos-hero h1 {
-    font-size: 50px;
-    display: inline;
-    color: #b7cfcf;
+    font-family: "Dancing Script", sans-serif;    
+    font-weight: 700;
+    font-size: 90px;    
+    color: #373535;
+    text-shadow: 4px 4px 2px #D0AE99;
 }
 
 
@@ -265,8 +268,9 @@ header nav ul li a {
     color: #fef7ef;
     background-color: #D8A16C;
     text-align: center;
+    
 }
-
+/*
 .productos-div div {
     width: 250px;
     height: 470px;
@@ -288,8 +292,11 @@ header nav ul li a {
 .productos-div div p {
     color: #B27088;
 }
+*/
 
+/* --------- Productos END --------*/
 
+/* --------- Pedidos --------*/
 .pedidos-hero {
     width: 100%;
     height: calc(100vh - 155px);
@@ -299,6 +306,7 @@ header nav ul li a {
 
 .pedidos-hero h1 {
     font-size: 50px;
+    text-align: center;
     display: inline;
     color: #B27088;
 }
@@ -314,19 +322,30 @@ header nav ul li a {
     padding: 20px;
     ;
 }
+/* --------- Pedidos END --------*/
 
-
+/* --------- Contacto --------*/
 .contacto-hero {
     width: 100%;
-    height: calc(100vh - 155px);
-    text-align: center;
+    height: calc(100vh - 100px);    
     background-image: url(../img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contacto-hero h1 {
-    font-size: 50px;
-    display: inline;
-    color: #d8a16c;
+    font-family: "Dancing Script", sans-serif;    
+    font-weight: 700;
+    font-size: 90px;    
+    color: #373535;
+    text-shadow: 4px 4px 2px #d8a16c;
 }
 
 .contacto-div {
@@ -340,6 +359,18 @@ header nav ul li a {
     background-color: #d0ae99;
     padding: 50px;
 }
+
+.contacto-form-div{    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contacto-form{        
+    width: 400px;
+}
+
+/* --------- Contacto END --------*/
 
 /*?----- Preferidos END  ----*/
 
@@ -506,5 +537,13 @@ width: 100%;
     .footer-copyright{        
         grid-column: span 1;        
     }
+
+    .productos-hero h1 {               
+        font-size: 70px;         
+        text-align: center;    
+    }
+
+    
+    
 
 }
