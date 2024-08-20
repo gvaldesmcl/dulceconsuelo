@@ -31,11 +31,11 @@ header {
 
 header img {
     height: 100px;
-    width: 350px;    
+    width: 350px;
 }
 
 
-.nav-link{
+.nav-link {
 
     color: #B27088 !important;
     margin-right: 20px !important;
@@ -63,9 +63,9 @@ header img {
 }
 
 .hero h2 {
-    font-family: "Dancing Script", sans-serif;    
+    font-family: "Dancing Script", sans-serif;
     font-weight: 700;
-    font-size: 90px;    
+    font-size: 90px;
     color: #373535;
     text-shadow: 4px 4px 2px #B27088;
 }
@@ -78,7 +78,7 @@ header img {
     padding: 20px;
 }
 
-.hero img{
+.hero img {
     width: 100px;
     height: 72px;
     margin-bottom: 30px;
@@ -118,7 +118,7 @@ header img {
     width: 200px;
 }
 
-.bienvenidos-texto ul li{    
+.bienvenidos-texto ul li {
     list-style-type: '👉';
     padding-inline-start: 1ch;
     text-align: left;
@@ -136,24 +136,24 @@ header img {
 
 }
 
-.preferidos h2{
+.preferidos h2 {
     font-family: "Montserrat", sans-serif;
     color: #fef7ef;
 }
 
-.preferidos-cards{
+.preferidos-cards {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .preferidos-cards h2 {
     padding: 20px;
     color: #fef7ef;
-    
+
 }
 
 .preferidos-cards div {
@@ -189,15 +189,17 @@ header img {
 .preferidos-cards div p {
     color: #B27088;
     margin-bottom: 25px;
-    
+
 }
 
 /*? ------ Preferidos END --------*/
 
 
+/*? ------ Nosotros --------*/
+
 .nosotros-hero {
     width: 100%;
-    height: calc(100vh - 100px);    
+    height: calc(100vh - 100px);
     background-image: url(../img/nosotros.png);
 
     background-repeat: no-repeat;
@@ -213,9 +215,9 @@ header img {
 }
 
 .nosotros-hero h1 {
-    font-family: "Dancing Script", sans-serif;    
+    font-family: "Dancing Script", sans-serif;
     font-weight: 700;
-    font-size: 90px;    
+    font-size: 90px;
     color: #373535;
     text-shadow: 4px 4px 2px #C2D6D7;
     /*color: #B27088;*/
@@ -227,7 +229,7 @@ header img {
     padding: 20px;
 }
 
-.nosotros-div ul li{    
+.nosotros-div ul li {
     list-style-type: '👉';
     padding-inline-start: 1ch;
     text-align: left;
@@ -240,6 +242,7 @@ header img {
     margin-bottom: 50px;
     vertical-align: middle;
     color: #fef7ef;
+    font-family: "Montserrat", sans-serif;
 
 }
 
@@ -247,12 +250,13 @@ header img {
     width: 300px;
     width: 200px;
 }
+/*? ------ Nosotros END --------*/
 
 /* --------- Productos --------*/
 
 .productos-hero {
     width: 100%;
-    height: calc(100vh - 100px);    
+    height: calc(100vh - 100px);
     background-image: url(../img/productos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,9 +271,9 @@ header img {
 }
 
 .productos-hero h1 {
-    font-family: "Dancing Script", sans-serif;    
+    font-family: "Dancing Script", sans-serif;
     font-weight: 700;
-    font-size: 90px;    
+    font-size: 90px;
     color: #373535;
     text-shadow: 4px 4px 2px #D0AE99;
 }
@@ -280,31 +284,9 @@ header img {
     color: #fef7ef;
     background-color: #D8A16C;
     text-align: center;
-    
-}
-/*
-.productos-div div {
-    width: 250px;
-    height: 470px;
-    margin: 20px;
-    text-align: center;
-    display: inline-block;
-    background-color: #fef7ef;
-}
+    font-family: "Montserrat", sans-serif;
 
-.productos-div div img {
-    width: 100%;
 }
-
-.productos-div div h3 {
-    color: #B27088;
-    margin-bottom: 10px;
-}
-
-.productos-div div p {
-    color: #B27088;
-}
-*/
 
 /* --------- Productos END --------*/
 
@@ -326,9 +308,9 @@ header img {
 }
 
 .pedidos-hero h1 {
-    font-family: "Dancing Script", sans-serif;    
+    font-family: "Dancing Script", sans-serif;
     font-weight: 700;
-    font-size: 90px;    
+    font-size: 90px;
     color: #373535;
     text-shadow: 4px 4px 2px #d8a16c;
 }
@@ -344,12 +326,13 @@ header img {
     padding: 20px;
     ;
 }
+
 /* --------- Pedidos END --------*/
 
 /* --------- Contacto --------*/
 .contacto-hero {
     width: 100%;
-    height: calc(100vh - 100px);    
+    height: calc(100vh - 100px);
     background-image: url(../img/contacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -363,9 +346,9 @@ header img {
 }
 
 .contacto-hero h1 {
-    font-family: "Dancing Script", sans-serif;    
+    font-family: "Dancing Script", sans-serif;
     font-weight: 700;
-    font-size: 90px;    
+    font-size: 90px;
     color: #373535;
     text-shadow: 4px 4px 2px #d8a16c;
 }
@@ -380,50 +363,41 @@ header img {
     justify-content: center;
     width: 100%;
     height: 100%;
-    
-    
+
+
 }
 
-.contacto-div .frame-formulario{
+.contacto-div .frame-formulario {
     border-color: #373535;
     border-width: 2px;
     border-style: solid
 }
 
-.contacto-div h2{
+.contacto-div h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #fef7ef;
+}
+
+.contacto-div h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
     font-family: "Montserrat", sans-serif;
     color: #fef7ef;
 }
 
 .contacto-div div {
     margin: 20px;
-    
+
 }
 
-.contacto-div form{
+.contacto-div form {
     width: 350px;
-    
-}
-/*
-.contacto-mapa {
-    text-align: center;
-    background-color: #d0ae99;
-    padding: 50px;
+
 }
 
-.contacto-form-div{    
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.contacto-form{        
-    width: 400px;
-}
-*/
 /* --------- Contacto END --------*/
 
-/*?----- Preferidos END  ----*/
+
 
 /*?----- Whatsapp  ----*/
 .whatsapp {
@@ -441,16 +415,16 @@ header img {
 
 /** ------- Estilos para elementos BOOTSTRAP -------*/
 
-.boton-bt{
+.boton-bt {
     background-color: #b27088 !important;
     color: #fef7ef !important;
 }
 
-.texto-centrado{
+.texto-centrado {
     text-align: center;
 }
 
-.imagen-modal{
+.imagen-modal {
     width: 50%;
     height: auto;
 }
@@ -465,18 +439,18 @@ footer {
     background-color: #b7cfcf;
 }
 
-.footer-area{
+.footer-area {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
-    grid-template-areas: 
-    "footer footer"
-    "copyright copyright"
+    grid-template-areas:
+        "footer footer"
+        "copyright copyright"
     ;
 
 }
 
-.footer-img{
+.footer-img {
     display: flex;
     justify-content: center;
     grid-area: "footer";
@@ -484,34 +458,34 @@ footer {
     height: 100%;
 }
 
-.footer-img img{    
+.footer-img img {
     width: 200px;
-    height: 200px;     
+    height: 200px;
 }
 
 
-.footer-copyright{
+.footer-copyright {
     grid-area: "copyright";
     display: flex;
     height: 100%;
     align-items: end;
-    padding: 20px;   
+    padding: 20px;
     grid-column: span 2;
-    justify-content: center;        
+    justify-content: center;
 }
 
 
-.footer-redes{
-grid-area: "footer";
-display: flex; 
-flex-direction: row;
-justify-content: center;
-align-items: center;
-height: 100%;
-width: 100%;
+.footer-redes {
+    grid-area: "footer";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
-.footer-redes img{
+.footer-redes img {
     width: 50px;
     height: 50px;
     margin-left: 10px;
@@ -534,77 +508,102 @@ width: 100%;
 
 /*? ****** SECCIÓN DE MEDIA QUERYS *************/
 
-@media screen and (max-width:700px){
+@media screen and (max-width:700px) {
 
     .hero p {
         margin-bottom: 50px;
-        font-size: 15px;        
+        font-size: 15px;
         width: 400px;
     }
 
-    .hero h2{
+    .hero h2 {
         font-weight: 600;
-        font-size: 70px;        
+        font-size: 70px;
     }
 
-    .bienvenidos div{        
-    width: 400px;
-        
+    .bienvenidos div {
+        width: 400px;
+
     }
 
 }
 
-@media screen and (max-width:515px){
+@media screen and (max-width:515px) {
 
-    .footer-area{
+    .footer-area {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto;
-        grid-template-areas: 
-        "footer footer";
-    
+        grid-template-areas:
+            "footer footer";
+
+    }
+
+    .whatsapp {        
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp img {
+        width: 50;
+        height: 50px;
     }
 
 }
 
-@media screen and (max-width:430px){
+@media screen and (max-width:430px) {
+
+    header {
+        flex-direction: column;
+    }
 
     header img {
         height: 50px;
-        width: 150px;
+        width: 160px;
     }
 
     .hero p {
         margin-bottom: 30px;
-        font-size: 12px;        
+        font-size: 12px;
         width: 300px;
     }
 
-    .bienvenidos div{        
-    width: 300px;        
+    .bienvenidos div {
+        width: 300px;
     }
 
-    .footer-area{
-        
+    .whatsapp {        
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .whatsapp img {
+        width: 40;
+        height: 40px;
+    }
+
+    .footer-area {
+
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
-        grid-template-areas: 
-        "footer"
-        "footer"
-        "copyright"
-        ;    
+        grid-template-areas:
+            "footer"
+            "footer"
+            "copyright"
+        ;
     }
 
-    .footer-copyright{        
-        grid-column: span 1;        
-    }
-    
-    .productos-hero h1 {               
-        font-size: 70px;         
-        text-align: center;    
+    .footer-copyright {
+        grid-column: span 1;
+        color: #fef7ef;
     }
 
-    
-    
+    .productos-hero h1 {
+        font-size: 70px;
+        text-align: center;
+    }
+
+
+
 
 }
