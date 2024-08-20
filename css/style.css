@@ -85,6 +85,7 @@ header img {
 
 
 .hero p {
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 50px;
     font-size: large;
     font-weight: 700;
@@ -108,6 +109,7 @@ header img {
     margin-bottom: 50px;
     vertical-align: middle;
     color: #fef7ef;
+    font-family: "Montserrat", sans-serif;
 }
 
 .bienvenidos div img {
@@ -119,6 +121,7 @@ header img {
     list-style-type: '👉';
     padding-inline-start: 1ch;
     text-align: left;
+    font-family: "Montserrat", sans-serif;
 }
 
 /*?----- Bienvenidos END ----*/
@@ -127,8 +130,14 @@ header img {
 .preferidos {
     text-align: center;
     background-color: #d0ae99;
+    padding: 15px;
 
 
+}
+
+.preferidos h2{
+    font-family: "Montserrat", sans-serif;
+    color: #fef7ef;
 }
 
 .preferidos-cards{
@@ -143,6 +152,7 @@ header img {
 .preferidos-cards h2 {
     padding: 20px;
     color: #fef7ef;
+    
 }
 
 .preferidos-cards div {
@@ -177,7 +187,8 @@ header img {
 
 .preferidos-cards div p {
     color: #B27088;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    
 }
 
 /*? ------ Preferidos END --------*/
@@ -299,16 +310,26 @@ header img {
 /* --------- Pedidos --------*/
 .pedidos-hero {
     width: 100%;
-    height: calc(100vh - 155px);
+    height: calc(100vh - 100px);
     text-align: center;
     background-image: url(../img/pedidos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .pedidos-hero h1 {
-    font-size: 50px;
-    text-align: center;
-    display: inline;
-    color: #B27088;
+    font-family: "Dancing Script", sans-serif;    
+    font-weight: 700;
+    font-size: 90px;    
+    color: #373535;
+    text-shadow: 4px 4px 2px #d8a16c;
 }
 
 
@@ -348,12 +369,41 @@ header img {
     text-shadow: 4px 4px 2px #d8a16c;
 }
 
+
 .contacto-div {
-    text-align: center;
+    display: flex;
     background-color: #d0ae99;
     padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+    
 }
 
+.contacto-div .frame-formulario{
+    border-color: #373535;
+    border-width: 2px;
+    border-style: solid
+}
+
+.contacto-div h2{
+    font-family: "Montserrat", sans-serif;
+    color: #fef7ef;
+}
+
+.contacto-div div {
+    margin: 20px;
+    
+}
+
+.contacto-div form{
+    width: 350px;
+    
+}
+/*
 .contacto-mapa {
     text-align: center;
     background-color: #d0ae99;
@@ -369,7 +419,7 @@ header img {
 .contacto-form{        
     width: 400px;
 }
-
+*/
 /* --------- Contacto END --------*/
 
 /*?----- Preferidos END  ----*/
@@ -469,7 +519,17 @@ width: 100%;
 
 
 
+/* COMPONENTES */
 
+.boton-pequeño {
+    text-decoration: none;
+    color: #fef7ef;
+    font-size: 15px;
+    background-color: #b27088;
+    padding: 10px;
+    margin-top: 10px;
+
+}
 
 /*? ****** SECCIÓN DE MEDIA QUERYS *************/
 
