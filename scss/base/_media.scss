@@ -1,0 +1,112 @@
+/*? ****** SECCIÓN DE MEDIA QUERYS *************/
+
+@media screen and (max-width:700px) {
+
+    .hero{
+        p{
+            margin-bottom: 50px;
+            font-size: 15px;
+            width: 400px;
+        }
+
+        h2{
+            font-weight: 600;
+            font-size: 70px;
+        }
+    }
+
+    .bienvenidos{
+        div {
+            width: 400px;
+        }
+    } 
+
+}
+
+@media screen and (max-width:515px) {
+
+    footer{
+        .footer-area {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "footer footer";    
+        }
+    }
+
+
+
+    .whatsapp {        
+        bottom: 20px;
+        right: 20px;
+        img{
+            width: 50;
+            height: 50px;
+        }
+    }
+}
+
+@media screen and (max-width:460px) {
+
+    header {
+        flex-direction: column;
+        img{
+            height: 50px;
+            width: 160px;
+        }
+    }
+
+
+
+    .hero{
+        p {
+            margin-bottom: 30px;
+            font-size: 12px;
+            width: 300px;
+        }
+    } 
+
+    .bienvenidos{
+        div{
+            width: 300px;
+        }
+    }    
+
+    .whatsapp {        
+        bottom: 10px;
+        right: 10px;
+        img{
+            width: 40;
+            height: 40px;
+        }
+    }
+
+    
+
+    footer{
+
+        .footer-area {
+
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "footer"
+                "footer"
+                "copyright"
+            ;
+        }
+
+        .footer-copyright {
+            grid-column: span 1;
+            color: #fef7ef;
+        }
+
+        .productos-hero h1 {
+            font-size: 70px;
+            text-align: center;
+        }
+
+    }
+
+}
