@@ -4,6 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg" href="./img/favicon.png"/>
+  <!-- DESCRIPCIÓN 180 Caracteres POR CADA DOCUMENTO -->
+  <meta name="description" content="">
+  <!-- KEYWORDS -->
+  <meta name="keywords" content="">
+  <!--! OPENGRAPH -->
+  <!--TYPE-->
+  <meta property="og:type" content="Web Site">
+  <!--TITLE-->
+  <meta property="og:title" content="Dulce Consuelo">
+  <!--DESCRIPTION-->
+  <meta property="og:description" content="Pasteleria Tradicional Chilena">
+  <!--URL-->
+  <meta property="og:url" content="http://dulceconsuelo.cl">
+  <!--IMAGE-->
+  <meta property="og:image" content="https://dulceconsuelo.cl/sitio/wp-content/uploads/2023/07/logo_dc.png">
   <title>Dulce Consuelo - Inicio</title>
   <!--<link rel="stylesheet" href="./css/style.css">-->
   <link rel="stylesheet" href="./css/estilos.css">
@@ -16,6 +32,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  
 </head>
 <body>
   <header>
@@ -43,19 +60,15 @@
             <li class="nav-item">
               <a class="nav-link" href="./pages/contacto.html">Contacto</a>
             </li>
-
           </ul>
-
         </div>
       </div>
     </nav>
-
-
   </header>
   <main>
     <!-- Seccion de HERO -->
     <section class="hero">
-      <h2 class="animate__animated animate__fadeInDown">Bienvenidos</h2>
+      <h1 class="animate__animated animate__fadeInDown fix-animacion">Bienvenidos</h1>
       <p>Nuestro foco principal es la pastelería tradicional chilena, por que nos encantan nuestros sabores y estamos
         orgullosos de ellos.</p>
       <img src="./img/chile_flag.png" alt="bandera chilena">
@@ -82,7 +95,7 @@
 
       </div>
       <div class="bienvenidos-img">
-        <img src="./img/bienvenidos.JPG" alt="">
+        <img src="./img/bienvenidos.JPG" alt="Fondo hero bienbenido">
       </div>
 
     </section>
@@ -92,140 +105,51 @@
 
       <div class="preferidos-cards">
         <div>
-          <img src="./img/212.jpg" alt="">
+          <img src="./img/212.jpg" alt="Foto torta Amor">
           <h3>Horajasca Amor</h3>
 
           <p>¡Una de nuestras favoritas! <br><br>Torta de Horahasca con manjar, crema chantilly con frambuesas y crema
             pastelera.</p>
-          <a href="" data-bs-toggle="modal" data-bs-target="#modalTorta1">Ver Detalles</a>
+            <a href="./pages/productos.html" >Ver Detalles</a>
         </div>
         <div>
-          <img src="./img/148.JPG" alt="">
+          <img src="./img/148.JPG" alt="Foto torta Pompadour">
           <h3>Horajasca Pompadour</h3>
           <p>Un Clásico de Rancagua<br><br>Torta de Horahasca con manjar y crema de plátano natural.<br><br></p>
           </p>
-          <a href="" data-bs-toggle="modal" data-bs-target="#modalTorta1">Ver Detalles</a>
+          <a href="./pages/productos.html" >Ver Detalles</a>
           <!--BOTON-->
         </div>
         <div>
-          <img src="./img/166.JPG" alt="">
+          <img src="./img/166.JPG" alt="foto torta bbizcocho y limón">
           <h3>Bizcocho Limón</h3>
           <p>Merengue y limón, ¡que gran combinación!<br><br>
             Torta de bizcocho con cremoso de limón y cubierta de merengue.</p>
-          <a href="" data-bs-toggle="modal" data-bs-target="#modalTorta3">Ver Detalles</a>
+            <a href="./pages/productos.html" >Ver Detalles</a>
           <!--BOTON-->
         </div>
       </div>
     </section>    
     <div class="whatsapp">
-      <a href=""><img src="./img/whatsapp.png" alt=""></a>
+      <a href=""><img src="./img/whatsapp.png" alt="Logo de Whatsapp"></a>
     </div>
   </main>
   <footer>
     <div class="footer-area">
       <div class="footer-img">
-        <img src="./img/logo_footer.jpg" alt="">
+        <img src="./img/logo_footer.jpg" alt="Logo Dulce Consuelo">
       </div>
       <div class="footer-redes">
-        <a href="https://www.instagram.com/dulceconsuelocl/" target="_blank"><img src="./img/instagram.png" alt=""></a>
+        <a href="https://www.instagram.com/dulceconsuelocl/" target="_blank"><img src="./img/instagram.png" alt="Logo Instaram"></a>
         <a href="https://web.facebook.com/profile.php?id=61551688924154" target="_blank"><img src="./img/facebook.png"
-            alt=""></a>
-        <img src="./img/youtube.png" alt="">
+            alt="Logo Facebook"></a>
+        <img src="./img/youtube.png" alt="Logo Youtube">
       </div>
       <div class="footer-copyright">
         Sitio Diseñado por <span style="font-family: 'Honk', system-ui; margin-left: 5px;">GVM 2024</span>
       </div>
     </div>
-  </footer>
-  <!-- MODALES -->
-  <!-- Modal Amor -->
-  <div class="modal fade" id="modalTorta1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Horajasca Amor</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body texto-centrado">
-          <img src="./img/212.jpg" class="imagen-modal img-thumbnail" alt="">
-
-          <p><b>¡Una de nuestras favoritas!</b></p>
-          <p>Torta de hojarasca con manjar, crema chantilly
-            con frambuesas y crema pastelera.</p>
-
-          Valores:
-
-          <li>18 cm. diámetro: $26.000</li>
-          <li>22 cm. diámetro: $33.000</li>
-          <li>26 cm. diámetro: $42.000</li>
-
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn boton-bt" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal Pompadur -->
-  <div class="modal fade" id="modalTorta2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Horajasca Amor</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body texto-centrado">
-          <img src="./img/148.jpg" class="imagen-modal img-thumbnail" alt="">
-
-          <p><b>Un Clásico de Rancagua</b></p>
-          <p>Torta de Horahasca con manjar y crema de plátano natural.</p>
-
-          Valores:
-
-          <li>18 cm. diámetro: $23.000</li>
-          <li>22 cm. diámetro: $30.000</li>
-          <li>26 cm. diámetro: $39.000</li>
-
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn boton-bt" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal Limon A -->
-  <div class="modal fade" id="modalTorta3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Bizcocho Limón</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body texto-centrado">
-          <img src="./img/166.jpg" class="imagen-modal img-thumbnail" alt="">
-
-          <p><b>Merengue y limón, ¡que gran combinación!</b></p>
-          <p>Torta de bizcocho con cremoso de limón y cubierta de merengue.</p>
-
-          Valores:
-
-          <li>18 cm. diámetro: $24.000</li>
-          <li>22 cm. diámetro: $30.000</li>
-          <li>26 cm. diámetro: $38.000</li>
-
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn boton-bt" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  </footer>  
 
 </body>
 
