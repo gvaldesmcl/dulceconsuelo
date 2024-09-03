@@ -1,12 +1,54 @@
 $color-primario: #B27088;
 $color-secundario: #b7cfcf;
 $color-terciario: #D8A16C;
-$colores-auxiliares: #FAD9D1,#D0AE99;
-$colores-textos:('negro':#373535,'blanco':#fef7ef);
+$colores-auxiliares: #FAD9D1, #D0AE99;
+$colores-textos: (
+    'negro':#373535,
+    'blanco':#fef7ef
+);
 
-$imagenes-hero:('index':'../img/hero_web_op_60.jpg',
-'nosotros':'../img/nosotros.png',
-'productos':'../img/productos.jpg',
-'pedidos':'../img/pedidos.jpg',
-'contacto':'../img/contacto.jpg');
+$imagenes-hero: (
+    'index':'../img/hero_web_op_60.jpg',
+    'nosotros':'../img/nosotros.png',
+    'productos':'../img/productos.jpg',
+    'pedidos':'../img/pedidos.jpg',
+    'contacto':'../img/contacto.jpg'
+);
 
+
+
+%activa-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%activa-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin boton ($color-hex,$fuente-size,$bg-color-hex,$padding,$margin){
+
+    text-decoration: none;
+    color: $color-hex !important;
+    font-size: $fuente-size;
+    background-color: $bg-color-hex;
+    padding: $padding;
+    margin: $margin;   
+    
+    }
+
+/*
+    .boton-pequeño {
+        text-decoration: none;
+        color: #fef7ef;
+        font-size: 15px;
+        background-color: #b27088;
+        padding: 10px;
+        margin-top: 10px;
+    
+    }*/

@@ -2,6 +2,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Honk&display=swap");
+.hero, .productos-hero, .pedidos-hero, .nosotros-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.preferidos-cards, .contacto-hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+/*
+    .boton-pequeño {
+        text-decoration: none;
+        color: #fef7ef;
+        font-size: 15px;
+        background-color: #b27088;
+        padding: 10px;
+        margin-top: 10px;
+    
+    }*/
 /*!--- RESET ---*/
 * {
   margin: 0;
@@ -75,11 +97,7 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  color: aliceblue; }
   .hero h1 {
     font-family: "Dancing Script", sans-serif;
     font-weight: 700;
@@ -87,11 +105,12 @@ header {
     color: #373535;
     text-shadow: 4px 4px 2px #B27088; }
   .hero a {
-    background-color: #B27088;
-    font-weight: 500;
-    color: #fef7ef;
     text-decoration: none;
+    color: #fef7ef !important;
+    font-size: 16px;
+    background-color: #B27088;
     padding: 20px;
+    margin: 5px;
     transition: 0.5s; }
     .hero a:hover {
       background-color: #b7cfcf; }
@@ -145,10 +164,6 @@ header {
 
 .preferidos-cards {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap; }
   .preferidos-cards h2 {
     padding: 20px;
@@ -171,11 +186,11 @@ header {
       width: 100%; }
     .preferidos-cards div a {
       text-decoration: none;
-      color: #fef7ef;
+      color: #fef7ef !important;
       font-size: 15px;
       background-color: #B27088;
       padding: 10px;
-      margin-top: 10px; }
+      margin: 5px; }
     .preferidos-cards div p .preferidos-cards div p {
       color: #B27088;
       margin-bottom: 25px; }
@@ -188,11 +203,7 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  color: aliceblue; }
   .productos-hero h1 {
     font-family: "Dancing Script", sans-serif;
     font-weight: 700;
@@ -221,11 +232,7 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  color: aliceblue; }
   .pedidos-hero h1 {
     font-family: "Dancing Script", sans-serif;
     font-weight: 700;
@@ -247,17 +254,14 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  color: aliceblue; }
   .nosotros-hero h1 {
     font-family: "Dancing Script", sans-serif;
     font-weight: 700;
     font-size: 90px;
     color: #373535;
-    text-shadow: 4px 4px 2px #b7cfcf; }
+    text-shadow: 4px 4px 2px #b7cfcf;
+    text-align: center; }
 
 .nosotros-div {
   text-align: center;
@@ -288,11 +292,7 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  color: aliceblue; }
   .contacto-hero h1 {
     font-family: "Dancing Script", sans-serif;
     font-weight: 700;
@@ -312,7 +312,8 @@ header {
   .contacto-div .frame-formulario {
     border-color: #373535;
     border-width: 2px;
-    border-style: solid; }
+    border-style: solid;
+    width: 600px; }
   .contacto-div h2 {
     font-family: "Montserrat", sans-serif;
     color: #fef7ef; }
@@ -323,8 +324,20 @@ header {
     color: #fef7ef; }
   .contacto-div div {
     margin: 20px; }
+    .contacto-div div div label {
+      color: #fef7ef; }
+    .contacto-div div div a {
+      text-decoration: none;
+      color: #fef7ef !important;
+      font-size: 15px;
+      background-color: #b27088;
+      padding: 10px;
+      margin: 5px; }
   .contacto-div form {
     width: 350px; }
+  .contacto-div iframe {
+    width: 500px;
+    height: 500px; }
 
 footer {
   background-color: #b7cfcf; }
@@ -365,6 +378,13 @@ footer {
       margin-right: 10px; }
 
 /*? ****** SECCIÓN DE MEDIA QUERYS *************/
+@media screen and (max-width: 840px) {
+  .contacto-div .frame-formulario {
+    width: 400px; }
+  .contacto-div iframe {
+    width: 300px;
+    height: 400px; } }
+
 @media screen and (max-width: 700px) {
   .hero p {
     margin-bottom: 50px;
@@ -374,6 +394,14 @@ footer {
     font-weight: 600;
     font-size: 70px; }
   .bienvenidos div {
+    width: 400px; } }
+
+@media screen and (max-width: 680px) {
+  .pedidos-div img {
+    width: 400px; } }
+
+@media screen and (max-width: 630px) {
+  .nosotros-div div {
     width: 400px; } }
 
 @media screen and (max-width: 515px) {
@@ -416,4 +444,19 @@ footer {
     color: #fef7ef; }
   footer .productos-hero h1 {
     font-size: 70px;
-    text-align: center; } }
+    text-align: center; }
+  .nosotros-div div {
+    width: 300px; }
+  .pedidos-div img {
+    width: 300px; }
+  .pedidos-hero h1 {
+    font-weight: 500;
+    font-size: 60px; }
+  .contacto-div .frame-formulario {
+    width: 300px; }
+  .contacto-div iframe {
+    width: 200px;
+    height: 400px; }
+  .contacto-hero h1 {
+    font-weight: 500;
+    font-size: 60px; } }

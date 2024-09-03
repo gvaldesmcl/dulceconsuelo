@@ -8,10 +8,7 @@
     background-position: center;
     background-attachment: fixed;
     color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %activa-flex-column;
 
     h1 {
         font-family: "Dancing Script", sans-serif;
@@ -19,6 +16,7 @@
         font-size: 90px;
         color: map-get($colores-textos, "negro");
         text-shadow: 4px 4px 2px $color-secundario;
+        text-align: center;
     }
 
 }

@@ -8,10 +8,7 @@
     background-position: center;
     background-attachment: fixed;
     color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %activa-flex-column;
 
     h1 {
         font-family: "Dancing Script", sans-serif;
@@ -22,11 +19,7 @@
     }
 
     a {
-        background-color: $color-primario;
-        font-weight: 500;
-        color: map-get($colores-textos, 'blanco');
-        text-decoration: none;
-        padding: 20px;
+        @include boton(map-get($colores-textos, 'blanco'),16px,$color-primario,20px,5px);        
         transition: 0.5s;
 
         &:hover {
@@ -111,10 +104,7 @@
 
 .preferidos-cards {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @extend %activa-flex-row;
     flex-wrap: wrap;
 
     h2 {
@@ -146,12 +136,7 @@
         }
 
         a {
-            text-decoration: none;
-            color: map-get($colores-textos, "blanco");
-            font-size: 15px;
-            background-color: $color-primario;
-            padding: 10px;
-            margin-top: 10px;
+            @include boton(map-get($colores-textos, 'blanco'),15px,$color-primario,10px,5px);        
         }
 
         p {

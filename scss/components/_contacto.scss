@@ -8,10 +8,7 @@
     background-position: center;
     background-attachment: fixed;
     color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %activa-flex-row;
     h1{
         font-family: "Dancing Script", sans-serif;
         font-weight: 700;
@@ -20,9 +17,6 @@
         text-shadow: 4px 4px 2px $color-terciario;
     }
 }
-
-
-
 
 .contacto-div {
     display: flex;
@@ -37,7 +31,10 @@
     .frame-formulario {
         border-color: map-get($colores-textos,'negro');
         border-width: 2px;
-        border-style: solid
+        border-style: solid;
+        width: 600px;
+        
+        
     }
 
     h2{
@@ -54,10 +51,26 @@
 
     div{
         margin: 20px;
+        div{
+
+            label{
+                color: map-get($colores-textos,'blanco');  
+            }
+
+            a{
+                @include boton(#fef7ef,15px,#b27088,10px,5px);
+            }
+
+        }
     }
 
     form{
         width: 350px;
+    }
+
+    iframe{
+        width: 500px;
+        height: 500px;
     }
 
 }
