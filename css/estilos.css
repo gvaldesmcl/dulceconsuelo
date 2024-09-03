@@ -66,13 +66,11 @@ header {
     height: 100px;
     width: 350px; }
 
-/*! ------------ MAIN ------------------*/
-/*?----- Hero ----*/
 .hero {
   width: 100%;
   height: calc(100vh - 100px);
   text-align: center;
-  background-image: url(../img/hero_web_op_60.jpg);
+  background-image: url("../img/hero_web_op_60.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -96,7 +94,7 @@ header {
     padding: 20px;
     transition: 0.5s; }
     .hero a:hover {
-      background-color: #C2D6D7; }
+      background-color: #b7cfcf; }
   .hero img {
     width: 100px;
     height: 72px;
@@ -182,11 +180,10 @@ header {
       color: #B27088;
       margin-bottom: 25px; }
 
-/*? ------ Preferidos END --------*/
 .productos-hero {
   width: 100%;
   height: calc(100vh - 100px);
-  background-image: url(../img/productos.jpg);
+  background-image: url("../img/productos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -215,13 +212,11 @@ header {
     .productos-div div div div:hover {
       transform: scale(1.1); }
 
-/* --------- Productos END --------*/
-/* --------- Pedidos --------*/
 .pedidos-hero {
   width: 100%;
   height: calc(100vh - 100px);
   text-align: center;
-  background-image: url(../img/pedidos.jpg);
+  background-image: url("../img/pedidos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -236,13 +231,100 @@ header {
     font-weight: 700;
     font-size: 90px;
     color: #373535;
-    text-shadow: 4px 4px 2px #d8a16c; }
+    text-shadow: 4px 4px 2px #D8A16C; }
 
 .pedidos-div {
   text-align: center;
-  background-color: #d0ae99; }
+  background-color: #D0AE99; }
   .pedidos-div img {
     padding: 20px; }
+
+.nosotros-hero {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url("../img/nosotros.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .nosotros-hero h1 {
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    color: #373535;
+    text-shadow: 4px 4px 2px #b7cfcf; }
+
+.nosotros-div {
+  text-align: center;
+  background-color: #D0AE99;
+  padding: 20px; }
+  .nosotros-div ul li {
+    list-style-type: '👉';
+    padding-inline-start: 1ch;
+    text-align: left; }
+  .nosotros-div div {
+    text-align: center;
+    display: inline-block;
+    width: 600px;
+    margin-bottom: 50px;
+    vertical-align: middle;
+    color: #fef7ef;
+    font-family: "Montserrat", sans-serif; }
+  .nosotros-div img {
+    width: 300px;
+    width: 200px; }
+
+/* --------- Contacto --------*/
+.contacto-hero {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url("../img/contacto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contacto-hero h1 {
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    color: #373535;
+    text-shadow: 4px 4px 2px #D8A16C; }
+
+.contacto-div {
+  display: flex;
+  background-color: #D0AE99;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+  .contacto-div .frame-formulario {
+    border-color: #373535;
+    border-width: 2px;
+    border-style: solid; }
+  .contacto-div h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #fef7ef; }
+  .contacto-div h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #fef7ef; }
+  .contacto-div div {
+    margin: 20px; }
+  .contacto-div form {
+    width: 350px; }
 
 footer {
   background-color: #b7cfcf; }

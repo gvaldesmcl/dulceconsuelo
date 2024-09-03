@@ -1,11 +1,8 @@
-/*! ------------ MAIN ------------------*/
-
-/*?----- Hero ----*/
 .hero {
     width: 100%;
     height: calc(100vh - 100px);
     text-align: center;
-    background-image: url(../img/hero_web_op_60.jpg);
+    background-image: url(map-get($imagenes-hero,'index'));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -15,42 +12,46 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h1{
+
+    h1 {
         font-family: "Dancing Script", sans-serif;
         font-weight: 700;
         font-size: 90px;
-        color: $color-black;
+        color: map-get($colores-textos, 'negro');
         text-shadow: 4px 4px 2px $color-primario;
     }
-    a{
+
+    a {
         background-color: $color-primario;
         font-weight: 500;
-        color: $color-white;
+        color: map-get($colores-textos, 'blanco');
         text-decoration: none;
         padding: 20px;
-        transition: 0.5s;   
-        &:hover {   
-                
+        transition: 0.5s;
+
+        &:hover {
+
             background-color: $color-secundario;
         }
     }
 
-    img{
+    img {
         width: 100px;
         height: 72px;
         margin-bottom: 30px;
-        transition: 0.5s;   
-        &:hover {            
-            transform: scale(1.2);            
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.2);
         }
     }
 
-    p{
+    p {
         font-family: "Montserrat", sans-serif;
         margin-bottom: 50px;
         font-size: large;
         font-weight: 700;
-        color: $color-black;
+        color: map-get($colores-textos, "negro");
         width: 700px;
     }
 
@@ -64,24 +65,25 @@
     background-color: $color-terciario;
     padding: 20px;
 
-    div{
+    div {
         text-align: center;
         display: inline-block;
-        width: 600px;    
+        width: 600px;
         vertical-align: middle;
-        color: $color-white;
-        font-family: "Montserrat", sans-serif;        
-        img{
+        color: map-get($colores-textos, "blanco");
+        font-family: "Montserrat", sans-serif;
+
+        img {
             width: 300px;
             width: 200px;
-        }                
+        }
     }
 }
 
-.bienvenidos-texto{
+.bienvenidos-texto {
 
-    ul{
-        li{
+    ul {
+        li {
             list-style-type: '👉';
             padding-inline-start: 1ch;
             text-align: left;
@@ -96,12 +98,12 @@
 /*?----- Preferidos  ----*/
 .preferidos {
     text-align: center;
-    background-color: $color-auxiliar-2;
+    background-color: nth($colores-auxiliares, 2);
     padding: 15px;
 
-    h2{
+    h2 {
         font-family: "Montserrat", sans-serif;
-        color: $color-white;
+        color: map-get($colores-textos, "blanco");
     }
 
 }
@@ -115,48 +117,48 @@
     align-items: center;
     flex-wrap: wrap;
 
-    h2{
+    h2 {
         padding: 20px;
-        color: $color-white;
+        color: map-get($colores-textos, "blanco");
     }
 
-    div{
+    div {
         width: 250px;
         height: 610px;
         margin: 20px;
         text-align: center;
         display: inline-block;
-        background-color: $color-white;
-        transition: 0.5s;   
-        &:hover {            
-            transform: scale(1.1);            
+        background-color: map-get($colores-textos, "blanco");
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.1);
         }
-        h3{
+
+        h3 {
             margin-bottom: 20px;
             font-size: 20px;
             padding: 10px;
         }
 
-        img{
+        img {
             width: 100%;
         }
 
-        a{
+        a {
             text-decoration: none;
-            color: $color-white;
+            color: map-get($colores-textos, "blanco");
             font-size: 15px;
             background-color: $color-primario;
             padding: 10px;
             margin-top: 10px;
         }
 
-        p{
+        p {
             .preferidos-cards div p {
                 color: $color-primario;
                 margin-bottom: 25px;
+            }
         }
     }
 }
-}
-
-/*? ------ Preferidos END --------*/

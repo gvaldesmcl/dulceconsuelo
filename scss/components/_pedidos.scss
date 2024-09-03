@@ -1,0 +1,30 @@
+.pedidos-hero {
+    width: 100%;
+    height: calc(100vh - 100px);
+    text-align: center;
+    background-image: url(map-get($imagenes-hero,'pedidos'));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-family: "Dancing Script", sans-serif;
+        font-weight: 700;
+        font-size: 90px;
+        color: map-get($colores-textos,'negro');
+        text-shadow: 4px 4px 2px $color-terciario;
+    }
+}
+
+.pedidos-div {
+    text-align: center;
+    background-color: nth($colores-auxiliares,2);
+    img {
+        padding: 20px;
+    }
+}

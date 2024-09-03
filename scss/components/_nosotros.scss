@@ -1,0 +1,53 @@
+.nosotros-hero {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(map-get($imagenes-hero,'nosotros'));
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: "Dancing Script", sans-serif;
+        font-weight: 700;
+        font-size: 90px;
+        color: map-get($colores-textos, "negro");
+        text-shadow: 4px 4px 2px $color-secundario;
+    }
+
+}
+
+.nosotros-div {
+    text-align: center;
+    background-color: nth($colores-auxiliares, 2);
+    padding: 20px;
+
+    ul {
+        li {
+            list-style-type: '👉';
+            padding-inline-start: 1ch;
+            text-align: left;
+        }
+    }
+
+    div {
+        text-align: center;
+        display: inline-block;
+        width: 600px;
+        margin-bottom: 50px;
+        vertical-align: middle;
+        color: map-get($colores-textos, "blanco");
+        font-family: "Montserrat", sans-serif;
+    }
+
+    img {
+        width: 300px;
+        width: 200px;
+    }
+}

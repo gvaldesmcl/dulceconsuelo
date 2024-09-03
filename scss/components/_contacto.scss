@@ -1,0 +1,64 @@
+/* --------- Contacto --------*/
+.contacto-hero {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(map-get($imagenes-hero,'contacto'));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-family: "Dancing Script", sans-serif;
+        font-weight: 700;
+        font-size: 90px;
+        color: map-get($colores-textos,'negro');
+        text-shadow: 4px 4px 2px $color-terciario;
+    }
+}
+
+
+
+
+.contacto-div {
+    display: flex;
+    background-color: nth($colores-auxiliares,2);
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    .frame-formulario {
+        border-color: map-get($colores-textos,'negro');
+        border-width: 2px;
+        border-style: solid
+    }
+
+    h2{
+        font-family: "Montserrat", sans-serif;
+        color: map-get($colores-textos,'blanco');
+    }
+
+    h3{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-family: "Montserrat", sans-serif;
+        color: map-get($colores-textos,'blanco');
+    }
+
+    div{
+        margin: 20px;
+    }
+
+    form{
+        width: 350px;
+    }
+
+}
+

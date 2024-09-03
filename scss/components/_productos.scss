@@ -1,7 +1,7 @@
 .productos-hero {
     width: 100%;
     height: calc(100vh - 100px);
-    background-image: url(../img/productos.jpg);
+    background-image: url(map-get($imagenes-hero,'productos'));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,71 +11,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     h1 {
         font-family: "Dancing Script", sans-serif;
         font-weight: 700;
         font-size: 90px;
-        color: #373535;
-        text-shadow: 4px 4px 2px #D0AE99;
+        color: map-get($colores-textos, 'negro');
+        text-shadow: 4px 4px 2px nth($colores-auxiliares, 2);
         text-align: center;
     }
-
 }
-
 
 .productos-div {
     padding: 20px;
-    color: #fef7ef;
-    background-color: #D8A16C;
+    color: map-get($colores-textos, 'blanco');
+    background-color: $color-terciario;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    
-    div{
-        div{
-            transition: 0.5s;  
-            div{
-                 
-                &:hover {            
-                    transform: scale(1.1);            
+
+    div {
+        div {
+            transition: 0.5s;
+
+            div {
+                &:hover {
+                    transform: scale(1.1);
                 }
             }
         }
     }
-
 }
-
-/* --------- Productos END --------*/
-
-/* --------- Pedidos --------*/
-.pedidos-hero {
-    width: 100%;
-    height: calc(100vh - 100px);
-    text-align: center;
-    background-image: url(../img/pedidos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h1 {
-        font-family: "Dancing Script", sans-serif;
-        font-weight: 700;
-        font-size: 90px;
-        color: #373535;
-        text-shadow: 4px 4px 2px #d8a16c;
-    }
-}
-
-.pedidos-div {
-    text-align: center;
-    background-color: #d0ae99;
-    img {
-        padding: 20px;
-    }
-}
-
-

@@ -1,8 +1,12 @@
 $color-primario: #B27088;
-$color-secundario: #C2D6D7;
+$color-secundario: #b7cfcf;
 $color-terciario: #D8A16C;
-$color-auxiliar-1: #FAD9D1;
-$color-auxiliar-2: #D0AE99;
-$color-black: #373535;
-$color-white: #fef7ef;
+$colores-auxiliares: #FAD9D1,#D0AE99;
+$colores-textos:('negro':#373535,'blanco':#fef7ef);
+
+$imagenes-hero:('index':'../img/hero_web_op_60.jpg',
+'nosotros':'../img/nosotros.png',
+'productos':'../img/productos.jpg',
+'pedidos':'../img/pedidos.jpg',
+'contacto':'../img/contacto.jpg');
 
